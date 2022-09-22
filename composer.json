@@ -12,13 +12,13 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Sitespeedup\\Speedoptimazation\\": "packages/sitespeedup/speedoptimization/src"
+            "Sitespeedup\\Speedoptimization\\": "packages/sitespeedup/speedoptimization/src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Sitespeedup\\Speedoptimazation\\Speedoptimization"
+                "Sitespeedup\\Speedoptimization\\Speedoptimization"
             ]
         }
     },
