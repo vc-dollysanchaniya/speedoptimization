@@ -2,9 +2,8 @@
 
 namespace Sitespeedup\Speedoptimization;
 
-use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Route;
+use Illuminate\Routing\Router;
 
 class Speedoptimization extends ServiceProvider
 {
@@ -29,11 +28,6 @@ class Speedoptimization extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/views', 'speedoptimization');
 
         $router->middlewareGroup('web', array(
-                \Sitespeedup\Speedoptimization\Http\Middleware\SpeedoptimizeMiddelware::class,
-            )
-        );
-
-        $router->middlewareGroup('api', array(
                 \Sitespeedup\Speedoptimization\Http\Middleware\SpeedoptimizeMiddelware::class,
             )
         );
