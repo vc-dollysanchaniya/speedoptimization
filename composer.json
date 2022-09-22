@@ -1,0 +1,30 @@
+{
+    "name": "dollyviitorcloud/speedoptimization",
+    "description": "\"This is speedoptimazation package which is help your site speed up\"",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vc-dollysanchaniya",
+            "email": "dolly.sanchaniya@viitor.cloud"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Sitespeedup\\Speedoptimazation\\": "packages/sitespeedup/speedoptimization/src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sitespeedup\\Speedoptimazation\\Speedoptimization"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true,
+    "require": {}
+}
