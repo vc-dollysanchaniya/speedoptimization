@@ -12,13 +12,13 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Sitespeedup\\Speedoptimization\\": "packages/sitespeedup/speedoptimization/src"
+            "Lockwebsitevendor\\Lockwebsitepackage\\": "packages/lockwebsitevendor/lockwebsitepackage/src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Sitespeedup\\Speedoptimization\\Speedoptimization"
+                "Lockwebsitevendor\\Lockwebsitepackage\\LockServiceProvider"
             ]
         }
     },
