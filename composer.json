@@ -18,7 +18,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Lockwebsitevendor\\Lockwebsitepackage\\LockServiceProvider"
+                "Lockwebsitevendor\\Lockwebsitepackage\\LockService"
             ]
         }
     },
