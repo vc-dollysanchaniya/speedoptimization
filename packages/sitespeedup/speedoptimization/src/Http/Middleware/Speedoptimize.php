@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
 
-class SpeedoptimizeMiddelware
+class Speedoptimize
 {
     /**
      * Handle an incoming request.
