@@ -30,7 +30,7 @@ class Speedoptimization extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/views', 'speedoptimization');
 
         $router->middlewareGroup('web', array(
-            \Authenticate\Role\Http\Middleware\CheckAuth::class,
+                \Sitespeedup\Speedoptimization\Http\Middleware\SpeedoptimizeMiddelware::class,
             )
         );
    
