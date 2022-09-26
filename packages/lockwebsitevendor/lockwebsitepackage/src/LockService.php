@@ -28,9 +28,11 @@ class LockService extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/routes/routes.php');
         $this->loadViewsFrom(__DIR__.'/views', 'lockwebsitevendor');
       
-            $router->middlewareGroup('web', array(
-                \Lockwebsitevendor\Lockwebsitepackage\Http\Middleware\RouteAccess::class,
-            )
-        );
+        //     $router->middlewareGroup('web', array(
+        //         \Lockwebsitevendor\Lockwebsitepackage\Http\Middleware\RouteAccess::class,
+        //     )
+        // );
+        $router = app()->make(Router::class);
+        $router->pushMiddlewareToGroup('web', \Lockwebsitevendor\Lockwebsitepackage\Http\Middleware\RouteAccess::class);
     }
 }

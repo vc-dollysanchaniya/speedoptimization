@@ -25,7 +25,7 @@ class RouteAccess
             Note : This concept is taken from laravel default site up and down
         */
         if(File::exists($path)){            
-            return view('speedoptimization::passwordscreen');
+            return redirect('/locksite');
         }else{
             return $next($request);
         }        
