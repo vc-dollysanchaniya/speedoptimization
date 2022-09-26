@@ -3,7 +3,7 @@
 <html lang="en">
 <body>
 <h1>Installation, and Usage Instructions</h1>
-<hr>
+
 <h3> How to Install ?</h3>
 <p>composer require dollyviitorcloud/speedoptimization</p>
 
@@ -15,17 +15,17 @@
 
 <h3>Add Send E-Mail detail in ENV file</h3>
 
-MAIL_MAILER=smtp
-MAIL_HOST=smtp.mailtrap.io
-MAIL_PORT=2525
-MAIL_USERNAME=e3489dabc559f9
-MAIL_PASSWORD=398a1395cacf30
-MAIL_ENCRYPTION=tls
-MAIL_FROM_ADDRESS="dolly.sanchaniya@viitor.colud"
+<p>MAIL_MAILER=smtp</p>
+<p>MAIL_HOST=smtp.mailtrap.io</p>
+<p>MAIL_PORT=2525</p>
+<p>MAIL_USERNAME=e3489dabc559f9</p>
+<p>MAIL_PASSWORD=398a1395cacf30</p>
+<p>MAIL_ENCRYPTION=tls</p>
+<p>MAIL_FROM_ADDRESS="dolly.sanchaniya@viitor.colud"</p>
 
 
 <h1>How It's Work ?</h1>
-<hr>
+
 
 <p>Run /locksite URL and you can get mail in your mail ID</p>
 <p>Next you can see password verification screen.</p>
