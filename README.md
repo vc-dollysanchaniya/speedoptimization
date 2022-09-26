@@ -11,7 +11,7 @@
 
 <p>\Lockwebsitevendor\Lockwebsitepackage\Http\Middleware\RouteAccess::class,</p>
 
-<p>Add above middelware in app\Http\Kernel.php file of  web group.</p>
+<p>Add above middelware in web group of app\Http\Kernel.php file .</p>
 
 <h3>Add Send E-Mail detail in ENV file</h3>
 
