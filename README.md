@@ -15,13 +15,8 @@
 
 <h3>Add Send E-Mail detail in ENV file</h3>
 
-<p>MAIL_MAILER=smtp</p>
-<p>MAIL_HOST=smtp.mailtrap.io</p>
-<p>MAIL_PORT=2525</p>
-<p>MAIL_USERNAME=e3489dabc559f9</p>
-<p>MAIL_PASSWORD=398a1395cacf30</p>
-<p>MAIL_ENCRYPTION=tls</p>
-<p>MAIL_FROM_ADDRESS="dolly.sanchaniya@viitor.colud"</p>
+<p>Please setup your mail credentail in env file beacuse you got the mail about password.</p>
+<p> Your unlock website password , you can get only via eamil so please add mail details in ENV file</p>
 
 
 <h1>How It's Work ?</h1>
