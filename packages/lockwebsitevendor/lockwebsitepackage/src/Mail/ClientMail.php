@@ -33,6 +33,6 @@ class ClientMail extends Mailable
     {
         return $this->from(env('MAIL_FROM_ADDRESS'), env('APP_NAME').' project password')
         ->subject('Website stopped Suddenly !')
-        ->view('lockwebsitevendor::adminmail');
+        ->view('lockwebsitevendor::mail');
     }
 }
