@@ -79,7 +79,7 @@ class passwordVerification extends Controller
             File::delete(dirname(dirname( dirname(__FILE__) )).'/passwordGenerate.php');
             return redirect('/');
         }else{
-            return redirect('/speedup')->with(['data' => 'Please provide correct password']);
+            return redirect('/locksite')->with(['data' => 'Please provide correct password']);
         }        
     }
 }
